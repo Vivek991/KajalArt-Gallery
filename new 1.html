@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<div id="googleMap3" style="width:400px;height:300px;"></div>
+
+<script>
+function myMap() {
+  var mapOptions3 = {
+    center: new google.maps.LatLng(29.029812,77.666255),
+    zoom:9,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+  };
+ 
+  var map1 = new google.maps.Map(document.getElementById("googleMap1"),mapOptions1);
+  var map2 = new google.maps.Map(document.getElementById("googleMap2"),mapOptions2);
+  var map3 = new google.maps.Map(document.getElementById("googleMap3"),mapOptions3);
+  var map4 = new google.maps.Map(document.getElementById("googleMap4"),mapOptions4);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
